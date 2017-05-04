@@ -4,7 +4,8 @@ import {LoggedInGuard}from './loggedIn.guard'
 
 @Component({
   selector: 'private',
-  templateUrl: "./private.html"
+  templateUrl: "./Rubrica/privatehome.html",
+  styleUrls: ['app.component.css'],
 })
 export class ProtectedComponent {
 }
