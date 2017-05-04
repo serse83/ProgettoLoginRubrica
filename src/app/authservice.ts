@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import {Router} from '@angular/router'
 //import { User} from './User'
 import { CanDeactivate } from '@angular/router';
 
@@ -16,6 +17,7 @@ export class AuthService {
 //logout remove username
   logout(): any {
     localStorage.removeItem('username');
+   
   }
 
 
