@@ -10,7 +10,7 @@ import {ProtectedComponent} from './PrivateComponent';
 import {AUTH_PROVIDERS} from './AuthService';
 import {HomeComponent} from './HomeComponent';
 import {LoggedInGuard}from './loggedIn.guard'
-
+import { BasicExampleComponent } from './rubrica/basic-example.component';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',

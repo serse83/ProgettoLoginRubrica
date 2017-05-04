@@ -19,6 +19,10 @@ import {HomeComponent} from './HomeComponent';
 
 import {LoggedInGuard}from './loggedIn.guard'
 
+import{BasicExampleComponent} from './rubrica/rubricadati'
+//
+import {Ng2SmartTableModule} from 'ng2-smart-table';
+
 import {RoutesApp } from './app.component'
 
 //costants concerning the differentes pages 
@@ -27,9 +31,10 @@ const routes: Routes = [
 { path: 'home',      component: HomeComponent },
 //{ path: 'private', redirectTo: 'private', pathMatch: 'full' },
 
-{ path: 'private',  component: ProtectedComponent,
+{ path: 'private',  component: ProtectedComponent, 
   canActivate: [LoggedInGuard]
-  }
+},
+
 ];
 
 //ng module
@@ -38,12 +43,17 @@ const routes: Routes = [
     RoutesApp,
     HomeComponent,
     ProtectedComponent,
-    LoginComponent
+    LoginComponent,
+    BasicExampleComponent,
+   // Ng2SmartTableModule,
+  //  BasicExampleComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     RouterModule.forRoot(routes), // <-- routes
+    Ng2SmartTableModule
+    
   ],
   bootstrap: [ RoutesApp ],
   providers: [
