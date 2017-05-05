@@ -10,7 +10,7 @@ import {ProtectedComponent} from './PrivateComponent';
 import {AUTH_PROVIDERS} from './AuthService';
 import {HomeComponent} from './HomeComponent';
 import {LoggedInGuard}from './loggedIn.guard'
-
+import {MusicComponent}  from './MusicComponent'
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',

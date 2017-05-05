@@ -22,31 +22,12 @@ h1 {
   font-family: 'Vibur', cursive;
   font-size: 50px;
 }
-img{
-  width: 50%;
-  padding: 0 auto;
-}
 
 .header { color: black;
 font-size: 20px;
 padding-bottom: 30px;
 top: 40px;
-position: fixed;
-background:#FF9000;
-width: 150%;
-margin-left: -100px;
-padding-left: 40px;
-margin-top: -40px;
-padding-top: 30px;
-z-index: 2;
-}
-
-.header.link {
-  color: green;
-  font: 20px;
-}
-.header.link:hover{
-  color: green
+position: fixed
 }
 
 .login-form {
@@ -182,5 +163,3 @@ z-index: 2;
  .loguser{
    position: absolute
  }
-
- 
