@@ -5,7 +5,7 @@ import { Injectable } from '@angular/core';
 import { CanActivate } from '@angular/router';
 //to put authservice in protected router 
 import { AuthService } from './AuthService';
-
+import {LoginComponent} from './Logincomponent'
 @Injectable()
 export class LoggedInGuard implements CanActivate {
   constructor(private authService: AuthService) {}

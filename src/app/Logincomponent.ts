@@ -4,7 +4,8 @@ import {Router} from '@angular/router';
 
 @Component({
     selector:'login',
-    templateUrl: './login.html',
+   
+   templateUrl: './login.html',
     styleUrls: ['app.component.css']
 })
 
@@ -36,16 +37,20 @@ export class LoginComponent {
     this.message = '';
   }
 
-  login(authenticatedUser: string, password: string): boolean {
+  login(user: string, password: string): boolean {
+      if (user === 'sergio' && password === 'marzullo') {
+      localStorage.setItem('username', 'user');
+      return true;
+    }
     this.message = '';
-    if (authenticatedUser.length===0) {
+    if (user.length===0) {
      this.message = 'Inser Username';}
     if (password.length===0) {
      this.message = 'Inser password';}
-    if ((password.length===0) &&(authenticatedUser.length===0)) {
+    if ((password.length===0) &&(user.length===0)) {
      this.message = 'Inser username and password';}
-     if (!this.authService.login(authenticatedUser,password)) {
-     this.message = 'Incorrect credentials.';}
+   //  if (!this.authService.login(user,password)) {
+    // this.message = 'Incorrect credentials.';}
     
     return false;
   }

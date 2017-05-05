@@ -7,12 +7,7 @@ import { CanDeactivate } from '@angular/router';
 export class AuthService {
 
   //login user and password (work in progress)
-   login(user: string, password: string): boolean {
-    if (user === 'sergio' && password === 'marzullo') {
-      localStorage.setItem('username', 'user');
-      return true;
-    }
-   }
+
 
 //logout remove username
   logout(): any {
