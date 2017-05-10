@@ -163,3 +163,22 @@ position: fixed
  .loguser{
    position: absolute
  }
+ .rubrica {
+   background: goldenrod;
+   font-size: 20px;
+   border: 1px solid
+  
+ }
+
+.rubrica a:hover{
+  background: black
+}
+table th td{ border: 7px solid
+
+}
+NOME{
+  background: white
+}
+pageheader{
+  background: blue
+}
