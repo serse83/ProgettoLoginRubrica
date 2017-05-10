@@ -1,0 +1,15 @@
+<login> loading </login>
+<br><br><br><br><br><br>
+Work in progress with activities to charge<br>
+<img src="http://1.bp.blogspot.com/-nR3zsuwmRHo/VOxI5moslCI/AAAAAAAAA84/iMKarE7wnTk/s1600/Work-in-progress.png">
+<div>
+  <div class="card">
+    <pre class="card-block card-header">Selected date is: <em *ngIf="dt">{{ getDate() | date:'fullDate'}}</em></pre>
+  </div>
+  <h4>Inline</h4>
+  <button type="button" class="btn btn-sm btn-info" (click)="today()">Today</button>
+  <button type="button" class="btn btn-sm btn-default btn-secondary" (click)="d20090824();">2009-08-24</button>
+  <button type="button" class="btn btn-sm btn-danger" (click)="clear()">Clear</button>
+  <button type="button" class="btn btn-sm btn-default btn-secondary" (click)="toggleMin()" tooltip="After today restriction">Min date</button>
+  <button type="button" class="btn btn-sm btn-default btn-secondary" (click)="disableTomorrow()">Disable Tomorrow</button>
+</div>
