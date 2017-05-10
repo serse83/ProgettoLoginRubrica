@@ -3,13 +3,13 @@
   <link rel='stylesheet prefetch' href='http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css'>
 
   <div class="loguser" *ngIf="authService.getUser()">
-    Logged in as <b>{{ authService.getUser() }}</b>
+    Welcome user <b>{{ authService.getUser() }}</b>
     <a href (click)="logout()">Log out</a>
   </div>
   
   <form class="login-form" *ngIf="!authService.getUser()">
     <div class="form-group">
-      <label for="username">User:</label>
+      <label for="username">Username:</label>
       <input class="form-control" name="username" #username>
     </div>
 
@@ -24,10 +24,27 @@
     <a class="log-btn" (click)="login(username.value, password.value)">
                              Submit
     </a>
+    <button g-login type="button">Google Login</button>
+<button linked-in type="button">LinkedIn Login</button>
+<button class="loginBtn--facebook" fb-login type="button" (click)="appconfig(fb-login)">facebook Login</button>
   </form>
 
+ <div>
+  
+<div class="middle" *ngIf="authService.getUser()">
+      <div class='dragula' [dragula]='"first-bag"'>
+        <div class='dragula'>Informazioni riservate </div>
+      <div class='dragula1' [dragula]='"first-bag"'>
+        <div>Dati riservati</div>
+        <div>Poi muovere i dati come vuoi tu</div>
+      <div class='dragula1' [dragula]='"first-bag"'>
+        <div> A tuo piacimento</div>
+      </div>
+      </div>
+  </div>
+</div>
 
-
+                
     <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 
     <script src="js/index.js"></script>
